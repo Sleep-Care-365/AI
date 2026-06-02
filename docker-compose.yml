@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  sleep365-ai:
+    build: .
+    container_name: sleep365_ai_container
+    ports:
+      - "8000:8000"
+    environment:
+      - ENV=production
+      - PYTHONUNBUFFERED=1
+    restart: always
