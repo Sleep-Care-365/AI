@@ -29,3 +29,26 @@ pip install -r requirements.txt
 # 3. 로컬 개발 서버 구동
 uvicorn main:app --reload
 ```
+
+## 🔗 Main API Specification
+
+- Endpoint: POST /api/ai/coach
+
+- nteractive API Docs: http://localhost:8000/docs (Swagger UI)
+
+---
+
+### 4단계: 깃허브 두 번째 Push (커밋 스택 누적)
+
+터미널에서 방금 추가한 신규 아키텍처 파일과 README를 원격 저장소에 반영합니다.
+
+```bash
+# 1. 변경 및 추가된 모든 파일 스테이징
+git add .
+
+# 2. RAG 아키텍처 세부 모듈화 및 문서화 명시하여 커밋
+git commit -m "feat: implement SleepRAGService pipeline and add repository architecture documentation"
+
+# 3. 깃허브로 푸시!
+git push origin main
+```
